@@ -13,7 +13,7 @@ public class Clock : MonoBehaviour
     public GameObject pointerSeconds;
     public GameObject pointerMinutes;
     public GameObject pointerHours;
-
+    public float realMinutes;
     //-- time speed factor
     public float clockSpeed = 1.0f;     // 1.0f = realtime, < 1.0f = slower, > 1.0f = faster
 
@@ -36,12 +36,16 @@ public class Clock : MonoBehaviour
 
 
         minutes += clockSpeed * Time.deltaTime;
+        realMinutes += clockSpeed * Time.deltaTime; 
         if (minutes > 60)
         {
             minutes = 0;
             hour++;
             if (hour >= 24)
+            {
                 hour = 0;
+                realMinutes = 0;
+            }
         }
 
         //-- calculate pointer angles

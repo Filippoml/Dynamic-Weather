@@ -111,7 +111,6 @@ Shader "Skybox/ProceduralGradient"
 				half3 c_sky = lerp(_SkyColor2 ,_SkyColor1 ,clamp(p * _SkyExponent1,0,1));
 				//	half3 c_sky = clamp( (_SkyColor1 /(	p+0.5f *_SkyExponent1))*2 ,0,1) ;
 				//fog
-				c_sky = lerp(_SkyColor3,c_sky,clamp((v.y * (_FogExp / unity_FogParams.r)),0,1));
 
 				half3 sun = _SunColor * min(pow(max(0, dot(v, _WorldSpaceLightPos0.xyz)),  550 / _SunScale), 1);
 				half3 c_sun = lerp(0,sun, clamp(p * (_SkyExponent1 + 5) + 0.6,0,1)); //fade below horizon
