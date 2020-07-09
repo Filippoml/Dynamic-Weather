@@ -25,10 +25,12 @@ public class Clock : MonoBehaviour
         //-- set real time
         if (realTime)
         {
-            hour = System.DateTime.Now.Hour;
-            minutes = System.DateTime.Now.Minute;
+
             seconds = System.DateTime.Now.Second;
         }
+        hour = 4;
+        minutes = 30;
+        realMinutes = hour * 60 + minutes;
     }
 
     void Update()

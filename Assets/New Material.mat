@@ -105,7 +105,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SkyExponent1: 3.12
-    - _SkyIntensity: 0.11053024
+    - _SkyIntensity: 0.13386767
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -118,6 +118,6 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MoonColor: {r: 1, g: 0.19591752, b: 0, a: 1}
     - _SkyColor1: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 0}
-    - _SkyColor2: {r: 1, g: 0.34126985, b: 0, a: 1}
+    - _SkyColor2: {r: 0, g: 0.17029142, b: 1, a: 1}
     - _SkyColor3: {r: 0, g: 0, b: 0, a: 0}
     - _SunColor: {r: 0, g: 0, b: 0, a: 1}
